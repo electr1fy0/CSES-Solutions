@@ -3,9 +3,6 @@
 using namespace std;
 
 int main() {
-  // n even -> n / 2
-  // n odd -> 3 * n + 1
-  // loop until n == 1
   long n;
   cin >> n;
 
