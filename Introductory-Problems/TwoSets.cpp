@@ -4,16 +4,6 @@
 using namespace std;
 
 int main() {
-  // divide 1 to n into two sets of equal sum, print count
-
-  // 8: 2 3 6 7 | 8 4 5 1    8 5 4 1 | 7 6 3 2
-  // 7: 1 2 4 7 | 3 5 6
-  // 6: 6 3 2 | 5 4 3
-  // 5: 1 2 4 | 3 5
-  // 4: 1 4 | 2 3
-
-  // logic: if difference of two sides is 1, fails
-  // alternating + 1 on sides
 
   int n;
   cin >> n;
@@ -22,8 +12,6 @@ int main() {
   vector<int> right;
 
   int cycle1 = 0;
-
-  // left.push_back(n);
 
   while (n > 0) {
     if (cycle1 == 0) {
