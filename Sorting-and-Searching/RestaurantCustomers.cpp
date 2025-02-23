@@ -1,7 +1,7 @@
 // Feb 22, 2025 at 22:02
+#include <algorithm>
 #include <iostream>
 #include <set>
-#include <algorithm>
 
 typedef long long ll;
 using namespace std;
@@ -18,24 +18,21 @@ int main() {
     cin >> x;
     a[i] = x; // full arr
 
-    if (i % 2 != 0)
-      seen.insert(x); // negative only arr
+    if (i % 2 != 0) seen.insert(x); // negative only arr
   }
 
-  sort(a, a + 2* n);
+  sort(a, a + 2 * n);
 
   ll max = 0;
   ll current = 0;
   for (ll i = 0; i < 2 * n; ++i) {
 
-      if (seen.count(a[i])) {
-          current--;
-      } else {
-          current++;
-      }
-      if ( current > max) {
-          max = current;
-      }
+    if (seen.count(a[i])) {
+      current--;
+    } else {
+      current++;
+    }
+    if (current > max) { max = current; }
   }
 
   cout << max;

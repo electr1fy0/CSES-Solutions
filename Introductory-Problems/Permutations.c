@@ -9,7 +9,6 @@ int main() {
     printf("NO SOLUTION");
 
   else {
-    // i = (n % 2 == 0) ? n : n - 1; // need even i
     i = n - 1;
     while (i > 0) {
       printf("%lld ", i);

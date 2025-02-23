@@ -4,9 +4,8 @@
 using namespace std;
 
 void decimalToBinary(int n, int size) {
-  for (int i = size - 1; i >= 0; --i) {
+  for (int i = size - 1; i >= 0; --i)
     cout << ((n >> i) & 1);
-  }
 }
 
 void toGrey(int n) {
@@ -20,7 +19,7 @@ void toGrey(int n) {
 
 int main() {
   ios::sync_with_stdio(0), cin.tie(0);
-  int n;   // n == nubmber of bits
+  int n; // n == nubber of bits
   cin >> n;
   toGrey(n);
   return 0;

@@ -3,10 +3,10 @@
 
 int main() {
   int n;
-  long long powered = 1, ans;
+  long long powered = 1;
   scanf("%d", &n);
 
-  for (int i = 0; i< n; ++i) powered = (powered *2) % MOD;
+  for (int i = 0; i < n; ++i) powered = (powered * 2) % MOD;
 
   printf("%lld", powered);
   return 0;

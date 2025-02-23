@@ -5,7 +5,6 @@ int absXOR(int a) {
   return (a + mask) ^ mask;
 }
 
-
 int main() {
   int n;
   scanf("%d", &n);
